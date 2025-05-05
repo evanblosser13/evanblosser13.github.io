@@ -12,13 +12,22 @@
             align-items: center;
             margin: 0;
             background-color: #000000;
+            color: rgb(252, 255, 252); /* Green text */
+            font-family: Consolas, monospace;
             max-width: 1200px;  /* Set maximum width */
             margin: 0 auto;     /* Center the body */
         }
+        .project-image {
+        max-width: 100%;
+        height: auto;
+        margin-top: 1rem;
+        border: 1px solid #30363d;
+        border-radius: 4px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
     </style>
 </head>
 <body>
-    <img src="Images/Logo.png" alt="Logo" style="width: 1920px; height: 620px;">
     <header>
         <h1>Projects</h1>
         <nav>
@@ -32,7 +41,11 @@
     <main>
         <section id="projects">
             <h2>Projects</h2>
-            <p>https://github.com/evan-a-blosser-1/Asteroid-Navigator/releases/tag/version_1.5</p>
+            <div class="project-item">
+                <h3>Asteroid Navigator Pre-released under MIT-License</h3>
+                <a href="software/asteroid_nav.zip" download>Download File</a>
+                <img src="Images/asteroid_nav.jpg" alt="Asteroid Navigator Screenshot" class="project-image">
+            </div>
         </section>
     </main>
     <footer>
